@@ -762,6 +762,10 @@ if (CFG.suspended === true) {
   }
   // Restore role from session on every render
   if (SESSION.employee?.role) state.role = SESSION.employee.role;
+   console.log("SESSION ROLE:", SESSION.employee?.role);
+console.log("STATE ROLE:", state.role);
+console.log("IS ADMIN:", SESSION.isAdmin);
+console.log("ROUTE:", state.route);
   if (SESSION.isAdmin) state.role = "Business Owner";
   console.log("ROLE =", state.role);
 console.log("ROUTE =", state.route);
